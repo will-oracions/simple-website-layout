@@ -226,4 +226,28 @@ nav .content .links ul {
     display: block;
     padding: 8px 18px;
   }
+
+  /* dropdown */
+  nav .content .links {
+    overflow-y: auto;
+  }
+
+  nav .content .links ul {
+    width: 100% !important;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+  }
+
+  .content .links ul li {
+    width: auto;
+    margin: 7px 20px;
+  }
+
+  .content .links ul li a {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px !important;
+  }
 }
