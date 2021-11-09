@@ -43,6 +43,9 @@ nav .content .links {
   list-style: none;
   line-height: 70px;
 }
+.content .links li label {
+  display: none;
+}
 
 .content .links li a,
 .content .links li label {
@@ -266,5 +269,28 @@ nav .content .links ul {
   nav .content .links #show-services:checked ~ ul,
   nav .content .links #show-more:checked ~ ul {
     max-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper nav {
+    padding: 0 10px;
+  }
+
+  .content .logo a {
+    font-size: 20px;
+  }
+
+  .wrapper .search-box {
+    max-width: calc(100% - 70px);
+  }
+
+  .wrapper .search-box .go-icon {
+    width: 30px;
+    right: 0;
+  }
+
+  .wrapper .search-box input {
+    padding-right: 30px;
   }
 }
